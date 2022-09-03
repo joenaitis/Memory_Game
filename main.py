@@ -5,7 +5,7 @@
 # If you don't find a pair, the cards will flip back over
 # Try to find all the pairs in the lowest amount of turns
 
-import simplegui
+import simpleguitk as simplegui
 import random
 
 # define globals
@@ -18,7 +18,10 @@ DISTINCT_TILES = 8
 def new_game():
     global my_tiles, state, turns, list_of_clicked_tiles
 
-    tile_numbers = range(DISTINCT_TILES) * 2
+    tile_numbers = list(range(DISTINCT_TILES))
+    #print(tile_numbers)
+    tile_numbers.extend(list(range(DISTINCT_TILES)))
+    #print(tile_numbers)
     random.shuffle(tile_numbers)
     my_tiles = []
     for i in range(2 * DISTINCT_TILES):
