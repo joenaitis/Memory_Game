@@ -1,4 +1,4 @@
-# Joe's simple game of memory
+# Joe's simple game of memory, done as a project for the online course "An Introduction to Interactive Programming in Python"
 
 # Select two cards and try to find the pair.
 # If you find a pair, the pair will remain visible
